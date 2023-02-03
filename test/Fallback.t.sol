@@ -1,10 +1,8 @@
 pragma solidity ^0.8.17;
 
 import "ds-test/test.sol";
-
 import "../src/Fallback/FallbackFactory.sol";
 import "../src/Ethernaut.sol";
-
 import "./utils/vm.sol";
 
 contract FallbackTest is DSTest {
@@ -14,7 +12,7 @@ contract FallbackTest is DSTest {
 
     function setUp() public {
         ethernaut = new Ethernaut();
-        // Fund the eoa address
+        // fund the eoa address
         vm.deal(eoaAddress, 5 ether);
     }
 
