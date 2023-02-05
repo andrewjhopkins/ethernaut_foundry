@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 import "forge-std/Script.sol";
-
-import "../src/Fallback/FallbackFactory.sol";
-import "../src/Ethernaut.sol";
 import "../src/Fallback/Fallback.sol";
 
-contract FalloutScript is Script {
+contract FallbackScript is Script {
     function run() public {
         address fallbackAddress = vm.envAddress("FALLBACK_ADDRESS");
         Fallback ethernautFallback = Fallback(payable(fallbackAddress));
