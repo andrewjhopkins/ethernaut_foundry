@@ -1,0 +1,1 @@
+example: forge script script/Fallback.s.sol --rpc-url=$RPC_URL --broadcast -vvv
