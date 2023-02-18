@@ -15,8 +15,6 @@ contract TelephoneTest is DSTest {
     }
 
     function testTelephoneHack() public {
-        return;
-
         TelephoneFactory telephoneFactory = new TelephoneFactory();
         ethernaut.registerLevel(telephoneFactory);
 
